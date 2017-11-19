@@ -1,0 +1,22 @@
+{% load static %}
+
+<form action="{% url 'contact_phone' %}" method="post">
+    {% csrf_token %}
+{#    {% bootstrap_form form %}#}
+    {{ form.non_field_errors }}
+	<div>
+	  <label for="id_subject">Имя:</label>
+	  {{ form.subject.errors }}
+{#	  {{ form.subject }}#}
+      <input class="form-control" id="id_subject" name="subject" placeholder="Ваше имя">
+	</div>
+	<div>
+	  <label for="id_sender">Номер телефона:</label>
+	  {{ form.sender.errors }}
+{#	  {{ form.sender }}#}
+      <input class="form-control" id="id_sender" name="sender" placeholder="Ваш номер телефона">
+	</div>
+	<br>
+	<input type="submit" class="btn" value="Отправить сообщение"/>
+</form>
+

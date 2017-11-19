@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="background__warehous">
+    <div class="container">
+      <div class="content_warehouse">
+        <h1 class="h1__warehouse">Складские и производственные <br />площади в аренду</h1>
+        <p class="p__warehouse">чистая аренда от собственника, без посредника</p>
+        <p class="description_warehouses">
+                Складской комплекс, общей площадью территории 50 000 кв. м и
+                площадью складов – 25 000 кв. м, насчитывает около 50 складских объектов. 
+                Склады различаются по своим характеристикам и предназначению, и расположены в
+                непосредственной близости с торговым комплексом «ДОКЕР», что позволяет
+                партнерам оптимизировать бизнес-процессы. 
+        </p>
+      </div>  
+      <div class="types text-center clearfix">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 type">
+                <img src="{% static 'img/warm_warehouse.jpg' %}" class="type__img" alt="">
+                <span>Отапливаемые склады</span>
+                <a href="{% url 'warehouse_warm' %}">
+                    <div class="more">узнать больше</div>
+                    <div class="more_xs">подробнее</div>
+                </a> 
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 type">
+            <img src="{% static 'img/cold_warehouse.jpg' %}" class="type__img" alt="">
+            <span>Холодные склады</span>
+            <a href="{% url 'warehouse_cold' %}">
+                <div class="more">узнать больше</div>
+                <div class="more_xs">подробнее</div>
+            </a> 
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 type">
+            <img src="{% static 'img/production_area.jpg' %}" class="type__img" alt="">
+            <span>Производственные площади</span>
+            <a href="{% url 'warehouse_manufacture' %}">
+                <div class="more">узнать больше</div>
+                <div class="more_xs">подробнее</div>
+            </a> 
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 type">
+            <img src="{% static 'img/outdoor_area.jpg' %}" class="type__img" alt="">
+            <span>Открытые площадки хранения</span>
+            <a href="{% url 'warehouse_open' %}">
+                <div class="more">узнать больше</div>
+                <div class="more_xs">подробнее</div>
+            </a> 
+          </div>
+      </div>
+    </div>
+</div>  
+
+{% endblock %} 

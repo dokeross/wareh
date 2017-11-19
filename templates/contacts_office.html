@@ -1,0 +1,52 @@
+{% load static %}
+<section class="feedback">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 block_operator">
+            <img src="{% static 'img/manager.png' %}" alt="" class="operator">
+            <div class="col-md-8 col-md-offset-5 feedback_contacts">
+                <p><b>Мария</b> (менеджер отдела аренды)</p>
+                <p><b>Тел.:</b> +7 (343) 323-23-23</p>
+                <p><b>Почта:</b> Safrygina@oboronka.com</p>
+                
+            </div>
+            </div>
+            <div class="col-sm-6 col-sm-offset-1 col-xs-10 col-xs-offset-1 feedback__p">
+            <h3 class="text-center">ВАМ НУЖЕН ОФИС?</h3>
+            <p class="feedback__p">
+                    Подробно рассмотрим вашу потребность и предложим наиболее оптимальный вариант для вашего бизнеса.
+                    Наша компания предлагает а аренду: офисы, торговые площади и складские помещения.
+                    Чтобы недорого снять помещение в Екатеринбурге
+                    от собственника - позвоните нам по указанному номеру или оставьте заявку на обратную связь.
+            </p>  
+            <button class="" data-toggle="modal" data-target="#modal-4">написать нам</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="feedback">
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-5 block_operator hidden-xs">
+        <img src="{% static 'img/manager.png' %}" alt="" class="operator">
+        <div class="col-sm-8 col-sm-offset-5 feedback_contacts">
+            <p><b>Мария</b> (менеджер отдела аренды)</p>
+            <p><b>Тел.:</b> +7 (343) 323-23-23</p>
+            <p><b>Почта:</b> Safrygina@oboronka.com</p>
+        </div>
+        </div>
+        <div class="col-sm-5 col-sm-offset-2 col-xs-10 col-xs-offset-1 feedback__form">
+        <form role="form">
+            <h3 class="text-center">остались вопросы?</h3>
+            <input type="text" placeholder="ваше имя" class="">
+            <input type="text" placeholder="ваше отчество" class="">
+            <input type="text" placeholder="текст сообщения" class="input_height">
+            <button class="col-sm-5 col-sm-offset-7">отправить</button>
+        </form> 
+        </div>
+    </div>
+    </div>
+</section> -->
+
+{% include 'form_footer.html' %}

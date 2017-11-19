@@ -1,0 +1,34 @@
+{% load static %}
+<footer class="footer">
+    <div class="text-center">
+        <img src="{% static 'img/logo.png' %}" alt="" class="logo">
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-3 pull-left text-left phone_float">
+        <p class="footer__p">
+            <!--ГК Оборонснабсбыт г.Екатеринбург ул. Бахчиванджи, 2
+            ИНН 667545564 КПП 4554556544 ОГРН 4354354435345435435
+            Тел. +7(343) 343-44-44<br />
+            Email: oboronka@mail.com-->
+            Группа компаний "Оборонснабсбыт"
+            620025, Россия, г. Екатеринбург
+            ул. Бахчиванджи, 2</br>
+            приемная: (343) 264-08-54</br>
+            факс: (343) 264-08-58</br>
+        </p>
+        <button class="footer_button" data-toggle="modal" data-target="#modal-map">посмотреть на карте</button>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-2 pull-right text-right contact phone_float">
+            <p class="contact__p"><b>+7(343) 343-33-33</b></p>
+            <span class="footer__span hidden-xs">Вы также можете:</span>
+            <button class="footer_button" data-toggle="modal" data-target="#modal-4">написать нам</button>
+            <button class="footer_button" data-toggle="modal" data-target="#modal-3">заказать звонок</button>
+        </div>
+    </div>
+    </div>
+</footer>
+
+{% include 'callback.html' %}
+{% include 'form_footer.html' %}
+{% include 'modal_map.html' %}
